@@ -1,0 +1,298 @@
+/* Given below is Google Fonts CDN linkS*/
+@import url("https://fonts.googleapis.com/css2?family=poppins:wght@400;600;900&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    
+    background-color:#9db7de;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f3f5f8;
+}
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 80%;
+    z-index: 111;
+    line-height: 80px;
+}
+.logo{
+    display: flex;
+    font-size: 40px;
+    font-weight: 700;
+    color: #3d535f;
+    letter-spacing: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+
+}
+b{
+    font-size: 50px;
+    color: #7f00ff;
+    border-radius: 10%;
+    
+}
+.nav-items {
+    display: flex;
+     
+}
+.nav-items li{
+    list-style: none;
+    margin: 0 15px;
+
+}
+.nav-items li a{
+    font-size: 25px;
+    color: #3d535f;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: capitalize;
+
+}
+.nav-items li:hover a{
+    color: #7f00ff;
+
+}
+.link a{
+    color: #3d535f;
+    font-size: 20px;
+    padding-left: 60px;
+}
+.link a:hover{
+    color: #7f00ff;
+    
+
+}
+.wrapper{
+    display: flex;
+    width: 100%;
+    height: calc(100vh -80px);
+    justify-content: left;
+    align-items: left;
+    padding: 0 10%;
+    padding-top: 150px;
+    overflow: hidden;
+}
+.wrapper::before{
+    position: absolute;
+    content: '';
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+    left: -12%;
+    top: 40%;
+    background: linear-gradient(45deg, #7f00ff, pink);
+    animation: object1 6s linear infinite;
+}
+.wrapper::after{
+    position: absolute;
+    content: '';
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    left: 35%;
+    top: 12%;
+    background: linear-gradient(45deg, #7f00ff, pink);
+    animation: object2 6s linear infinite;
+}
+@keyframes object1{
+    50%{
+        left: -13%;
+        top: 41%;
+
+    }
+}
+@keyframes object2{
+    50%{
+        left: 35%;
+        top: 10%;
+        
+    }
+}
+.cols{
+    width: 50%;
+}
+.cols0{
+    width: 90%;
+    z-index: 5;
+}
+.topline{
+    display: block;
+    position: relative;
+    font-size: 55px;
+    letter-spacing: 5px;
+    color: #7f00ff;
+}
+.topline::after{
+    padding-top: 6px;
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 45px;
+    bottom: 10px;
+    background-color: pink;
+}
+h1{
+    display: block;
+    font-size: 4em;
+    font-weight: 400;
+    color: #3d535f;
+
+}
+p{
+    color: #032c42;
+    display: block;
+    width: 90%;
+    font-size: 1.2em;
+}
+.multiText{
+    color: #7f00ff;
+    text-transform: capitalize;
+
+}
+.btns{
+    width: 100%;
+    position: relative;
+    left: 150px;
+}
+button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 400;
+    color: white;
+    background-color: #3d535f;
+    padding: 8px 14px;
+    margin: 40px 5px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    box-shadow: 0 15px 10px rgba(0,0,0,0.4);
+
+}
+button:hover{
+     background-color: #7f00ff;
+}
+button a{
+    color: azure;
+    text-decoration: none;
+}
+.imgbox{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+.imgbox #img{
+    position: relative;
+    height: 800px;
+    width:700px;
+    object-fit: cover;
+    padding-left: 100px;
+    border-radius: 10%;
+    padding-bottom: 250px;
+
+}
+
+
+.imgbox #splash{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-180deg);
+    width:80%;
+    filter: saturate(200%);
+    animation: animate 4s linear infinite;
+}
+@keyframes animate{
+    20%{
+        right: 69px;
+        top: 91px;
+        bottom: 91px;
+        width: 155%;
+        border-radius: 45% 55% 70% 35% / 70% 30% 90% 40%;
+
+    }
+    
+}
+/*responsive pages*/
+@media (max-width:952px){
+    .logo{
+        font-size:20px;
+        margin-left: 19px;
+        transition: .5s;
+        
+
+    }
+    .nav-ul li a{
+        font-size: 16px;
+        position: relative;
+    }
+    .link{
+        font-size: 16px;
+        position: relative;
+    }
+}
+
+
+/* Skills section*/
+section .skills{
+    border: black solid 5px;
+    display: block;
+    justify-content: center;
+    margin-top: 10%;
+    padding: 10%;
+}
+h1{
+    padding:15%;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    padding-left: 40%;
+}
+h1:hover{
+    z-index: 5000;
+
+
+}
+
+section div{
+    justify-content: space-between;
+    padding: 15%;
+    border: #7f00ff solid 3px  ;
+    margin: 20px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+ section div:hover{
+    border: #de179b solid 3px;
+    border-radius: 30px;
+    box-shadow: rgb(55, 49, 53) 10px 5px 5px;
+}
+h3{
+    display: inline;
+    justify-content: center;
+    color: #7f00ff;
+    align-items: center;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 20px;
+    padding-left: 40%;
+}
+
+p{
+    display: inline-flex;
+    justify-content: space-around;
+}
+span{
+    display: block;
+    padding-left: 41%;
+    padding-bottom: 1%;
+}

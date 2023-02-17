@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link href="node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    <link  rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Solitreo&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!--section for home screen-->
+    <div class="container" >
+        <nav> 
+            <div class="logo">Portfolio<b>.</b>  </div>
+            <ul class="nav-items">
+                <li><a href="#Wrapper">Home</a>  </li>
+                <li><a href="#Skills">Skills</a>  </li>
+                <li><a href="#Project">Project</a>  </li>
+                <li><a href="#More">More</a>  </li>
+            </ul>
+            <div class="link">
+                <a href="#"> <i class="bi bi-linkedin"></i>  </a> 
+                <a href="tel:+919989140542"><i class="bi bi-telephone-fill"></i>  </a> 
+                <a href="mailto:induindraja77@outlook.com"> <i class="bi bi-envelope-fill"></i> </a>
+
+            </div>
+        </nav>
+        <div class="wrapper" id="Wrapper">
+            <div class="cols cols0">
+                <span class="topline"></span>
+                <h1> I'm <span class="multiText"> </span>  </h1>
+                <p>
+                    I am BINGE INDRAJA YADAV an  aspiring REACT and UI Learning fresher who is trying to seek  a role to enhance and explore my technical knowledge in your company.
+                </p>
+                <div class="btns">
+                    <button><a href="https://indrajayadav.github.io/work2">Download CV</a></button>
+                    <button><a href= "#">Hire Me</a> </button>
+                </div>
+            </div>
+            <div class="cols cols1">
+                <div class="imgbox">
+                    <img src="splashs.png" id="splash">
+                    <img src="public/image.png" id="img">
+                </div>
+            </div>
+            
+        </div>
+            
+            
+    </div>
+    <!--section for Skills-->
+    <section class="skills" id="Skills">
+        <div class="skills" id="SKills">
+            <div class="skills"  >
+                <h1 class="bi bi-mortarboard-fill" >SKILLS</h1>
+               <div class="html" >
+                <span><img src="/htmllogo.png" height="100" width="70" ></span>
+                <h3>HTML</h3>
+                <p>As a fresher in HTML Programming Language, I created responsive pages and websites using technologies.I will also learn using CSS to control the layout and design of your web pages.With a solid understanding of HTML and CSS, </p>
+               </div>
+               <div class="CSS">
+               <span><img src="/csslogo.png" height="100" width="70"  ></span>
+                <h3>CSS</h3>
+               <p>As a Fresher in CSS (Cascading Style Sheets) technologies, I will control the layout and design of your web pages that look great on all devices. Additionally Sass (Syntatically Awesome Style Sheet).</p>
+               </div>
+               
+               <div class="Bootstrap">
+                <span><img src="/bootstraplogo.png" height="100" width="120" ></span>
+                <h3>Bootstrap</h3>
+                <p>As a fresher in Bootstrap technology , I learnt how to use the bootstrap-icons, Cdn links and the Themes.</p>
+    
+            </div>
+            <div class="JavaScript">
+                <span><img src="/js.png" height="100" width="130" ></span>
+                <h3>JavaScript</h3>
+                <p> As a fresher in JavaScript is a programming language that is widely used to add dynamic functionality to web pages. I will learn how to use JavaScript to manipulate the DOM (Document Object Model), create and modify HTML elements, respond to user events, and to create animated effects.</p>
+            </div>
+            </div>
+            
+    
+        </div>
+
+
+    </section>
+    <!--section for projects -->
+    <section class="projects" id="Project">
+        <div>
+            <img src="project.png" width="900px" height="900px">
+            <button class="btn btn-primary " ><a href="https://indrajayadav.github.io/work3">  View My-Projects</a></button>
+        </div>
+
+
+    </section>
+    <!--section for more-->
+    <section>
+
+    </section>
+
+   <!--script used for type effect-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typingEffect=new Typed(".multiText",{
+            strings:["designer"," coder","developer","designer"],
+            loop : true,
+            typeSpeed :106,
+            backSpeed :80,
+            backDelay :1500
+        })
+    </script>
+    <script>
+        var typingEffect=new Typed(".topline",{
+            strings:["Hello","Viewers","INDRAJA here"],
+            loop : true,
+            typeSpeed :160,
+            backSpeed : 100,
+            backDelay:1500
+        })
+    </script>
+    
+</body>
+</html>
